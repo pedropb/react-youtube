@@ -3,7 +3,7 @@ import VideoListItem from './video_list_item'
 
 const VideoList = ({videos, onVideoSelect}) => {
     const videoItems = videos.map((video) => {
-        return <VideoListItem video={video} onVideoSelect={onVideoSelect}/>
+        return <VideoListItem key={video.etag} video={video} onVideoSelect={onVideoSelect}/>
     });
 
     return (
