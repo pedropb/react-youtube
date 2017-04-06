@@ -9,6 +9,7 @@
     "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
+    "coveralls": "^2.13.0",
     "enzyme": "^2.8.0",
     "react-addons-test-utils": "^15.4.2",
     "react-scripts": "0.9.5"
@@ -16,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "eject": "react-scripts eject"
   }
 }

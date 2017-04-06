@@ -1,4 +1,4 @@
-<h1>React YouTube player <img src="https://travis-ci.org/pedropb/react-youtube.svg?branch=master" alt="build status" /></h1>
+# React YouTube player ![build badge](https://travis-ci.org/pedropb/react-youtube.svg?branch=master) ![coverage badge](https://coveralls.io/repos/github/pedropb/react-youtube/badge.svg?branch=master)
 
 This is a web application that consists of a YouTube player, a search bar and 5 video suggestions.
 
