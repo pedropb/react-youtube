@@ -2,6 +2,10 @@
 
 This is a web application that consists of a YouTube player, a search bar and 5 video suggestions.
 
+It uses [youtube-api-search](https://www.npmjs.com/package/youtube-api-search) npm package to fetch and parse YouTube queries.
+
+It also implements instant search as the user types, providing a convenient way to browse videos on YouTube.
+
 It is a demo app inspired by [StephenGrider](https://github.com/StephenGrider) Udemy's course [Modern React with Redux](https://www.udemy.com/react-redux/learn/v4/content)
 
 ## Installation
