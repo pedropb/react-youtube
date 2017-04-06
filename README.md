@@ -2,7 +2,7 @@
 
 This is a web application that consists of a YouTube player, a search bar and 5 video suggestions.
 
-It is a demo app inspired by @StephenGrider Udemy's course [Modern React with Redux](https://www.udemy.com/react-redux/learn/v4/content)
+It is a demo app inspired by [StephenGrider](/StephenGrider) Udemy's course [Modern React with Redux](https://www.udemy.com/react-redux/learn/v4/content)
 
 ## Installation
 
