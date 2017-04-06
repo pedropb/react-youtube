@@ -1,11 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
+/**
+ * Component that implements searchbar view.
+ * This component handles the state of the term input.
+ * When term is changed, it propagates the change to parent component
+ * so new videos are loaded with the new search term.
+ */
 class SearchBar extends Component {
-    constructor(props) {
-        super(props);
 
-        this.state = { term: '' };
-    }
+    static propTypes = {
+        /**
+         * Callback to propagate search term changes
+         */
+        onInputChange: PropTypes.func.isRequired
+    };
+
+    state = {
+        term: ''
+    };
 
     render() {
         return (
