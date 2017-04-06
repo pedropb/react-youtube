@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { debounce } from 'lodash';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoDetail from './components/video_detail';
@@ -35,9 +36,11 @@ class App extends Component {
   }
 
   render() {
+    const searchVideos = debounce(term => this.searchVideos(term), 300);
+
     return (
       <div>
-        <SearchBar onInputChange={term => this.searchVideos(term)} />
+        <SearchBar onInputChange={term => searchVideos(term)} />
         <div className="row">
           <VideoDetail video={this.state.selectedVideo} />
           <VideoList 
